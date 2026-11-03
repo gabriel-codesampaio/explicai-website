@@ -10,8 +10,6 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
-| [T-010](T-010-imagens-de-compartilhamento-mostram-github-co.md) | Imagens de compartilhamento mostram github.com/gabriel-codesampaio/explicai | P3 | aberto | design |
-| [T-011](T-011-configurar-os-repositorios-no-github-descrica.md) | Configurar os repositórios no GitHub (descrição, homepage, topics, README) | P2 | aberto | design |
 
 ## Fechados
 
@@ -26,3 +24,5 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 | [T-007](fechados/T-007-titulo-aberto-de-verdade-soa-como-slogan.md) | Título "Aberto de verdade." soa como slogan | P3 | feito | 7479c8b |
 | [T-008](fechados/T-008-lead-do-heroi-repete-a-meta-description.md) | Lead do herói repete a meta description | P3 | feito | 0275d29 |
 | [T-009](fechados/T-009-prints-do-produto-com-fundo-branco-no-tema-es.md) | Prints do produto com fundo branco no tema escuro | P3 | descartado | - |
+| [T-010](fechados/T-010-imagens-de-compartilhamento-mostram-github-co.md) | Imagens de compartilhamento mostram github.com/gabriel-codesampaio/explicai | P3 | feito | 6ccf97e |
+| [T-011](fechados/T-011-configurar-os-repositorios-no-github-descrica.md) | Configurar os repositórios no GitHub (descrição, homepage, topics, README) | P2 | feito | - |

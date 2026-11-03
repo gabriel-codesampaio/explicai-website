@@ -2,7 +2,7 @@
 
 - Prioridade: P3
 - Tamanho: P
-- Status: aberto
+- Status: feito
 - Agente: design
 - Origem: Achado ao entregar o T-004
 
@@ -10,7 +10,7 @@
 O endereço escrito nas duas imagens (pt e en) não é o do repositório, que é gabriel-codesampaio/explicai-studio.
 
 ## Critérios de aceite
-- [ ] As duas imagens mostram o endereço certo do repositório (ou o do site).
+- [x] As duas imagens mostram o endereço certo do repositório (ou o do site).
 
 ## Onde
 site/img/social-preview.png, site/img/social-preview-en.png.
@@ -19,4 +19,4 @@ site/img/social-preview.png, site/img/social-preview-en.png.
 Abrir as imagens.
 
 ## Registro
-<!-- preenchido ao fechar: commit, o que foi feito, o que ficou de fora -->
+Commit: 6ccf97e. Texto redesenhado nas duas imagens (Archivo e JetBrains Mono do site), só o endereço mudou.
