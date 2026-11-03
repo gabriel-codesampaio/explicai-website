@@ -33,6 +33,7 @@ section{border-top:1px solid var(--linha);padding:56px 0}
 .hero{border-top:0;padding:32px 0 56px}
 .hero .wrap{display:grid;gap:28px}
 .hero h1{margin-bottom:16px}
+.hero p>a{display:inline-flex;align-items:center;min-height:44px}
 .hero p.lead{max-width:34rem;margin-bottom:24px}
 .cmd{display:flex;flex-direction:column;gap:12px;margin-bottom:12px}
 .cmd code{display:block;overflow-x:auto;white-space:nowrap;padding:14px 16px;border:1px solid var(--linha);border-radius:3px;font-size:1rem;background:color-mix(in srgb,var(--cobalto) 6%,transparent)}
