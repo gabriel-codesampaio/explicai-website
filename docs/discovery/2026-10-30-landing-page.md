@@ -52,7 +52,7 @@ Rótulo mono: `CONSTRUTOR DE MANUAIS · OPEN SOURCE`
 
 | pt-BR | en-US |
 |---|---|
-| **H1:** Tira o print, que o Explicaí explica. | **H1:** Tira o print, que o Explicaí explica. |
+| **H1:** Tira o print e explica. O Explicaí monta o manual. | **H1:** Tira o print e explica. O Explicaí monta o manual. |
 | Construtor de manuais open source e gratuito. Cole os prints, marque a tela, escreva os passos e exporte em PDF, HTML e Markdown. | The free, open source manual builder. Paste screenshots, mark them up, write the steps and export to PDF, HTML and Markdown. |
 | Comando: `npx explicai manuais` | Command: `npx explicai manuals` |
 | Botão sólido: **Copiar comando** (vira "Copiado") | Solid button: **Copy command** (becomes "Copied") |
