@@ -52,9 +52,6 @@ section{border-top:1px solid var(--linha);padding:56px 0}
 .nota{margin-top:24px}
 pre{margin:0;overflow-x:auto;padding:16px;border:1px solid var(--linha);border-radius:3px;font-size:.875rem;line-height:1.5;background:color-mix(in srgb,var(--cobalto) 6%,transparent)}
 .dois{display:grid;gap:28px}
-dl{margin:24px 0 0;display:grid;gap:20px;max-width:40rem}
-dt{font-weight:700}
-dd{margin:4px 0 0}
 .links{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:20px}
 .links a{display:inline-flex;align-items:center;min-height:44px}
 .final{text-align:left}
