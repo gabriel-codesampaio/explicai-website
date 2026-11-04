@@ -11,7 +11,6 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
 | [T-012](T-012-pagina-de-recursos-e-secao-o-que-vem-junto.md) | Página de recursos e seção "O que vem junto" | P1 | em andamento | supervisor |
-| [T-017](T-017-secao-veja-pronto-isolada-na-home.md) | Seção "Veja pronto" isolada na home | P2 | aberto | frontend |
 | [T-018](T-018-home-nao-diz-para-quem-e.md) | A home não diz para quem é | P2 | aberto | frontend |
 | [T-019](T-019-enxugar-pagina-de-recursos.md) | Enxugar a página de recursos | P2 | aberto | frontend |
 | [T-020](T-020-texto-da-home-repete-e-afirma-sem-prova.md) | Texto da home repete os passos e afirma sem prova | P3 | aberto | frontend |
@@ -35,3 +34,4 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 | [T-014](fechados/T-014-alt-em-portugues-na-pagina-en.md) | Alt de imagem em português na página de recursos em inglês | P2 | feito | pendente |
 | [T-015](fechados/T-015-prints-claros-no-tema-escuro.md) | Prints do produto são caixas brancas no tema escuro | P2 | feito | pendente |
 | [T-016](fechados/T-016-print-do-heroi.md) | Print do herói: barra de rolagem gravada, marcadores sobre o texto, ilegível | P2 | feito | pendente |
+| [T-017](fechados/T-017-secao-veja-pronto-isolada-na-home.md) | Seção "Veja pronto" isolada na home | P2 | feito | pendente |
