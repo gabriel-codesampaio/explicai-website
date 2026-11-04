@@ -123,3 +123,9 @@ section{padding:72px 0}
 .rec .wrap>*{min-width:0}
 .rotulo a{color:inherit}
 .indice a{padding:6px 0}
+/* faixa "E mais" de Recursos */
+.mais-grade{display:grid;gap:0 40px;margin-top:8px}
+.mais article{padding:16px 0 20px;border-top:1px solid var(--linha);scroll-margin-top:16px}
+.mais h3{margin-bottom:6px}
+.mais p{max-width:34rem}
+@media (min-width:960px){.mais-grade{grid-template-columns:1fr 1fr}}
