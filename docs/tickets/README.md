@@ -10,6 +10,7 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
+| [T-012](T-012-pagina-de-recursos-e-secao-o-que-vem-junto.md) | Página de recursos e seção "O que vem junto" | P1 | em andamento | supervisor |
 
 ## Fechados
 

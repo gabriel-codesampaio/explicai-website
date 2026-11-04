@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recursos do Explicaí Studio: ocultar dados, marca do cliente e mais</title>
+<meta name="description" content="Ocultar dados do print, logo e cores do cliente, recorte, revisão e exportação em PDF, HTML e Markdown. Tudo local, sem conta, open source.">
+<link rel="canonical" href="https://gabriel-codesampaio.github.io/explicai-website/features/">
+<meta name="theme-color" content="#f5f6fa" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#0e1120" media="(prefers-color-scheme:dark)">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="alternate" hreflang="pt-BR" href="https://gabriel-codesampaio.github.io/explicai-website/features/">
+<link rel="alternate" hreflang="en-US" href="https://gabriel-codesampaio.github.io/explicai-website/en/features/">
+<link rel="alternate" hreflang="x-default" href="https://gabriel-codesampaio.github.io/explicai-website/features/">
+<meta property="og:title" content="Explicaí Studio: o que ele faz com o seu print">
+<meta property="og:description" content="Ocultar dados, marca do cliente, recorte, revisão e exportação. Open source e local.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://gabriel-codesampaio.github.io/explicai-website/img/social-preview.png">
+<meta property="og:image:alt" content="Tira o print e explica. O Explicaí monta o manual. Logotipo do Explicaí em fundo azul com três marcadores numerados.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css">
+<script src="../copy.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#principal">Ir para o conteúdo</a>
+<header>
+<div class="wrap">
+<a href="../" aria-label="Explicaí, início"><picture><source srcset="../img/explicai-logo-horizontal-escuro.svg" media="(prefers-color-scheme:dark)"><img src="../img/explicai-logo-horizontal.svg" alt="" width="122" height="26"></picture></a>
+<nav aria-label="Principal">
+<a href="../demo/">Demo</a>
+<a href="./" aria-current="page">Recursos</a>
+<a href="https://github.com/gabriel-codesampaio/explicai-studio">GitHub</a>
+<a href="https://codesampa.io/blog">Blog</a>
+<span class="lang"><a href="./" lang="pt-BR" hreflang="pt-BR" aria-current="page">PT</a><a href="../en/features/" lang="en-US" hreflang="en-US">EN</a></span>
+</nav>
+</div>
+</header>
+<main id="principal">
+
+<section class="rec-topo">
+<div class="wrap">
+<p class="rotulo"><a href="../">Explicaí</a> / Recursos · Studio 0.2</p>
+<h1><span class="marca">Do print solto ao manual do cliente.</span></h1>
+<p class="lead">O Studio cuida do que vem depois do print colado: esconder dado sensível, vestir o manual com a marca do cliente, revisar e exportar.</p>
+<ol class="indice">
+<li><a href="#ocultar">Ocultar dados</a></li>
+<li><a href="#marca">Marca do cliente</a></li>
+<li><a href="#recortar">Recortar e reduzir</a></li>
+<li><a href="#marcacoes">Marcações</a></li>
+<li><a href="#revisao">Revisão</a></li>
+<li><a href="#editor">Editor</a></li>
+<li><a href="#exportacao">Exportação</a></li>
+<li><a href="#local">Local e aberto</a></li>
+</ol>
+</div>
+</section>
+
+<section class="rec" id="ocultar">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">01</span><h2>Esconda o dado do cliente antes de o print sair da sua máquina.</h2><p>Selecione a área com a ferramenta Ocultar (tecla O) e escolha tarja ou desfoque. O Studio grava o efeito nos pixels da imagem e apaga o original. Não sobra camada para alguém remover depois.</p><ul class="det"><li><b>Tarja ou desfoque forte.</b> A tarja é o padrão. O desfoque pixela e borra a área.</li><li><b>Original apagado.</b> Se a pasta do manual está no git, o Studio avisa antes.</li><li><b>Exports antigos.</b> O lembrete na tela diz que HTML e PDF já gerados ainda têm o original. Gere de novo.</li><li><b>Sem aplicar, nada acontece.</b> Sair sem aplicar a ocultação pede confirmação.</li></ul></div>
+<figure><img src="../img/feat-ocultar-pt.webp" width="1230" height="752" loading="eager" alt="Janela Editar imagem com a ferramenta Ocultar ativa: uma tarja escura cobre a coluna Fornecedor da tabela Contas a pagar, e o painel ao lado oferece Tarja, Desfoque e Aplicar ocultação. Três marcadores numerados ficam sobre o menu, o botão Nova conta e a situação."><figcaption>A tarja cobre a coluna de fornecedores antes de aplicar.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt inv" id="marca">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">02</span><h2>O manual sai com a cara do cliente.</h2><p>No diálogo de exportação você sobe o logo e escolhe as cores e a fonte. Cada manual guarda o seu tema, então o visual de um cliente não vaza para o de outro.</p><ul class="det"><li><b>Logo na capa.</b> Aparece também no topo do sumário, no HTML e no PDF. Aceita PNG, JPG e SVG.</li><li><b>Cores do tema.</b> Texto, destaque, realce e cada nível de título, com paletas prontas e o código da cor.</li><li><b>Nove fontes.</b> Archivo, Atkinson Hyperlegible Next, Inter, Source Sans 3, Source Serif 4, Lora, Montserrat, Playfair Display e JetBrains Mono. Vão junto do HTML exportado, sem depender de rede.</li><li><b>Aviso de contraste.</b> O diálogo avisa quando a cor escolhida não chega a 4,5:1 com o branco.</li></ul></div>
+<figure><img src="../img/feat-marca-pt.webp" width="1280" height="949" loading="lazy" alt="Diálogo Exportar manual com os formatos Site, PDF e Markdown, o logo do cliente já enviado e as cores do manual, com a paleta Ameixa escolhida."><figcaption>Logo, cores e fontes ficam no mesmo diálogo da exportação.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec" id="recortar">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">03</span><h2>Corte, dimensione e emagreça o print.</h2><p>Print de tela cheia pesa e distrai. Recorte o que importa, escolha quanto espaço a imagem ocupa e reduza o arquivo.</p><ul class="det"><li><b>Recortar (R).</b> As marcações acompanham o corte, e a confirmação lista as que vão sumir.</li><li><b>Tamanho.</b> Pequena, Média ou Larga. Fica guardado ao lado da imagem e vale no editor, no HTML e no PDF.</li><li><b>Reduzir resolução e peso.</b> Sugere 1600 px de largura, mostra o peso antes e depois e nunca amplia a imagem. Fica livre quando não há recorte nem ocultação pendente.</li></ul></div>
+<figure><img src="../img/feat-tamanho-pt.webp" width="1230" height="752" loading="lazy" alt="Janela Editar imagem com a ferramenta Recortar ativa: um retângulo tracejado marca a parte que fica, e o painel Reduzir imagem mostra 3840 × 2160 px, largura de 1600 px e o peso previsto."><figcaption>Recorte em andamento e, ao lado, o painel Reduzir imagem.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt inv" id="marcacoes">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">04</span><h2>Marque a tela e explique cada ponto.</h2><p>Marcadores numerados, destaques, setas e áreas clicáveis, com uma legenda para cada número. A mesma marcação aparece no editor, no HTML e no PDF.</p><ul class="det"><li><b>Atalhos de letra.</b> V seleciona, M marca, D destaca, S desenha seta, A cria área clicável.</li><li><b>Área clicável.</b> Um ponto do print vira link para outra página do manual.</li><li><b>Legenda.</b> Quem lê vê o número e o que ele mostra, logo abaixo da imagem.</li></ul></div>
+<figure><img src="../img/passo-2-pt.webp" width="1000" height="700" loading="lazy" alt="Print da tela Contas a pagar no editor, com três marcadores numerados, o botão Nova conta destacado em amarelo e a legenda de cada número logo abaixo."><figcaption>Marcadores, destaque e legenda no print.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec" id="revisao">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">05</span><h2>Revise antes de mandar.</h2><p>Cada página tem um status, e o manual final pode levar só o que foi aprovado.</p></div>
+<div class="side"><ul class="det"><li><b>Status por página.</b> Rascunho, em revisão, aprovada, publicada: aparece no topo do editor.</li><li><b>Só páginas aprovadas.</b> Opção da exportação para o cliente não receber texto pela metade.</li><li><b>Versões.</b> Marque a “Versão do manual” que vale como final. A exportação usa ela ou, sem ela, o texto atual.</li></ul></div>
+</div>
+</section>
+
+<section class="rec alt" id="editor">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">06</span><h2>Um editor que não atrapalha a escrita.</h2><p>Texto, passos e imagens na mesma página, com os blocos que um manual pede.</p></div>
+<div class="side"><ul class="det"><li><b>Alertas.</b> Salvos como alerta GFM e exportados com rótulo em texto e cor por tipo.</li><li><b>Menu <code>/</code>.</b> Blocos agrupados, com prévia.</li><li><b>Tabelas.</b> Controles de linha e coluna direto na tabela.</li><li><b>Cor do texto.</b> Paleta fixa, com o nome de cada cor.</li><li><b>Colar print.</b> Botão e Ctrl+V à vista.</li></ul><pre tabindex="0"><code>> [!WARNING]
+> Confira o vencimento antes de salvar.</code></pre></div>
+</div>
+</section>
+
+<section class="rec" id="exportacao">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">07</span><h2>PDF para ler, HTML para publicar, Markdown para a IA.</h2><p>Um clique gera o formato. O Markdown sai em um arquivo só, com a legenda dos prints em texto.</p><div class="fmts"><div><code>PDF</code><span>Para imprimir ou mandar por e-mail.</span></div><div><code>HTML</code><span>Um arquivo para publicar ou abrir no navegador.</span></div><div><code>MD</code><span>Um arquivo só, com a legenda dos prints em texto.</span></div></div></div>
+<figure><img src="../img/passo-3-pt.webp" width="1000" height="700" loading="lazy" alt="Janela Exportar manual com três formatos para escolher: Site (HTML), PDF e Markdown para IA."><figcaption>Os três formatos no diálogo de exportação.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt" id="local">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">08</span><h2>Roda na sua máquina. Sem conta, sem nuvem.</h2><p>O Studio abre em localhost e salva numa pasta sua: Markdown e imagens, versionados no git ao lado do código. Licença MIT.</p></div>
+<div class="side"><ul class="det"><li><b>Sem conta.</b> Nada para cadastrar e nada enviado para fora.</li><li><b>Edição fora do Studio.</b> Se outro editor mexer na página, o Studio avisa em vez de sobrescrever.</li><li><b>Português e inglês.</b> A interface troca de idioma. O manual fica no idioma em que você escrever.</li></ul></div>
+</div>
+</section>
+
+<section class="final rec-final">
+<div class="wrap">
+<h2>Tira o print e explica. O Explicaí monta o manual.</h2>
+<div class="cmd">
+<code tabindex="0">npx explicai manuais</code>
+<button class="btn" type="button" hidden data-copy="npx explicai manuais" data-done="Copiado" data-fail="Copie à mão">Copiar comando</button>
+</div>
+<p class="apoio">Precisa de Node 20.12 ou mais novo.</p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<span>um projeto <a href="https://codesampa.io">codesampa.io</a></span>
+<span>MIT</span>
+<a href="https://github.com/gabriel-codesampaio/explicai-studio">GitHub</a>
+<a href="https://www.npmjs.com/package/explicai">npm</a>
+<a href="https://codesampa.io/blog">Blog</a>
+<a href="https://gabriel-codesampaio.github.io/explicai-brandbook/">Brand book</a>
+</div>
+</footer>
+</body>
+</html>
