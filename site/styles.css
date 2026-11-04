@@ -123,3 +123,5 @@ section{padding:72px 0}
 .side .det,.side pre{margin-top:0}
 @media (max-width:599px){header .wrap{flex-wrap:wrap;gap:0 12px}header nav{width:100%;justify-content:space-between;margin:0 -8px;width:calc(100% + 16px)}header .lang{margin-left:0}}
 .rec .wrap>*{min-width:0}
+.rotulo a{color:inherit}
+.indice a{padding:6px 0}
