@@ -112,7 +112,7 @@ section{padding:72px 0}
 .rec-final .cmd{max-width:34rem;margin-top:24px}
 .rec-final h2{max-width:24ch}
 @media (min-width:960px){
-.junto{grid-template-columns:repeat(3,1fr);column-gap:32px}
+.junto{grid-template-columns:repeat(2,1fr);column-gap:32px}
 .junto li{padding:24px 0}
 .indice{grid-template-columns:repeat(4,1fr)}
 .rec .wrap{grid-template-columns:5fr 7fr;gap:56px;align-items:center}

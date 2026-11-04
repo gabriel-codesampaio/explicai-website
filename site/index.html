@@ -61,14 +61,8 @@
 
 <section>
 <div class="wrap">
-<p class="rotulo">Por que existe</p>
 <h2>Todo sistema precisa de manual. Quase nenhum tem um bom.</h2>
 <p style="margin-top:16px;max-width:40rem">Fazer à mão leva dias: tirar print, marcar a tela, escrever cada passo, exportar. Depois a tela muda e você faz tudo de novo.</p>
-<div class="cols">
-<p><b>Lançar.</b> O sistema foi para o ar e o manual ficou para a semana que vem.</p>
-<p><b>Entregar.</b> O cliente pediu o manual junto com o sistema.</p>
-<p><b>Atualizar.</b> A tela mudou e o manual continua com a tela antiga.</p>
-</div>
 </div>
 </section>
 
@@ -80,17 +74,14 @@
 <li class="passo">
 <h3><span class="n">1</span> Cole o print.</h3>
 <p>Copie a tela do seu sistema e cole na página. A imagem entra no manual.</p>
-<img src="img/passo-1-pt.webp" width="1000" height="600" loading="lazy" alt="Editor do Explicaí com a página Conferir as contas do mês: a imagem da tela do sistema Financeiro já colada no texto.">
 </li>
 <li class="passo">
 <h3><span class="n">2</span> <span class="marca">Marque a tela.</span></h3>
 <p>Coloque marcadores numerados, destaques, setas e áreas clicáveis, e escreva o que a pessoa faz em cada um.</p>
-<img src="img/passo-2-pt.webp" width="1000" height="700" loading="lazy" alt="Print da tela Contas a pagar no editor, com três marcadores numerados, o botão Nova conta destacado em amarelo e a legenda de cada número logo abaixo.">
 </li>
 <li class="passo">
 <h3><span class="n">3</span> Exporte.</h3>
 <p>Gere PDF, HTML ou Markdown com um clique.</p>
-<img src="img/passo-3-pt.webp" width="1000" height="700" loading="lazy" alt="Janela Exportar manual com três formatos para escolher: Site (HTML), PDF e Markdown para IA.">
 </li>
 </ol>
 <p class="nota apoio">O Explicaí não captura a tela. O print vem de você.</p>
@@ -104,10 +95,6 @@
 <ul class="junto">
 <li><h3>Ocultar dados</h3><p>Tarja ou desfoque queimados nos pixels do print. O original é apagado.</p></li>
 <li><h3>Marca do cliente</h3><p>Logo na capa, cores do tema e nove fontes que vão junto do HTML.</p></li>
-<li><h3>Recortar e reduzir</h3><p>Corte o print, escolha o tamanho e reduza o peso sem ampliar.</p></li>
-<li><h3>Revisão</h3><p>Status por página, exportação só das aprovadas e versões do manual.</p></li>
-<li><h3>Editor</h3><p>Alertas, menu <code>/</code>, tabelas e cor do texto.</p></li>
-<li><h3>Edição fora do Studio</h3><p>Se outro editor mexer na página, o Studio avisa em vez de sobrescrever.</p></li>
 </ul>
 <p><a href="features/">Ver todos os recursos →</a></p>
 </div>
@@ -122,52 +109,12 @@
 </div>
 </section>
 
-<section class="formatos">
-<div class="wrap dois">
-<div>
-<p class="rotulo">Formatos</p>
-<h2>PDF para quem lê. Markdown para quem automatiza.</h2>
-<p>Cada manual é uma pasta de Markdown com as imagens, versionada no git ao lado do código. Pessoas leem o PDF ou o site em HTML. Uma IA lê os mesmos arquivos.</p>
-</div>
-<pre tabindex="0" aria-label="Exemplo da pasta de um manual e de uma página em Markdown"><code>financeiro/
-  manual.json
-  pages/
-    cadastrar-conta-a-pagar.md
-  assets/
-    contas-a-pagar.png
-    contas-a-pagar.png.json
-
----
-title: Cadastrar conta a pagar
----
-
-1. Abra **Contas a pagar** no menu lateral.
-2. Clique em **Nova conta**.
-3. Preencha fornecedor, valor e vencimento.
-
-![Tela Contas a pagar](../assets/contas-a-pagar.png)</code></pre>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<p class="rotulo">Aberto e gratuito</p>
-<h2>Licença MIT, código no GitHub.</h2>
-<p style="margin-top:16px;max-width:40rem">O processo de construção está no blog. Documentar um sistema não pode custar mais que construí-lo.</p>
-<div class="links">
-<a href="https://github.com/gabriel-codesampaio/explicai-studio">Código no GitHub</a>
-<a href="https://codesampa.io/blog">Ler os posts “Explicaí #N”</a>
-</div>
-</div>
-</section>
-
 <section>
 <div class="wrap">
 <p class="rotulo">Perguntas rápidas</p>
 <h2>O que segura a instalação</h2>
 <dl>
 <div><dt>Preciso de conta?</dt><dd>Não. O Explicaí roda em <code>localhost</code> e salva numa pasta sua.</dd></div>
-<div><dt>Funciona em português e em inglês?</dt><dd>A interface sim. O manual fica no idioma em que você escrever os passos.</dd></div>
 <div><dt>E os dados do meu cliente nos prints?</dt><dd>Use a ferramenta Ocultar: ela queima uma tarja ou um desfoque nos pixels e apaga o original. Tudo roda na sua máquina. Exports antigos ainda têm o original, então gere de novo.</dd></div>
 <div><dt>O que preciso instalar?</dt><dd>Node 20.12 ou mais novo. O resto o <code>npx</code> baixa.</dd></div>
 </dl>

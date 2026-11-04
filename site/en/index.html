@@ -62,14 +62,8 @@
 
 <section>
 <div class="wrap">
-<p class="rotulo">Why it exists</p>
 <h2>Every system needs a manual. Almost none has a good one.</h2>
 <p style="margin-top:16px;max-width:40rem">Doing it by hand takes days: take the screenshot, mark the screen, write each step, export. Then the screen changes and you start over.</p>
-<div class="cols">
-<p><b>Launch.</b> The system is live and the manual is next week's job.</p>
-<p><b>Hand over.</b> The client wants the manual with the system.</p>
-<p><b>Update.</b> The screen changed and the manual still shows the old one.</p>
-</div>
 </div>
 </section>
 
@@ -81,17 +75,14 @@
 <li class="passo">
 <h3><span class="n">1</span> Paste the screenshot.</h3>
 <p>Copy your system's screen and paste it into the page. The image goes into the manual.</p>
-<img src="../img/passo-1-en.webp" width="1000" height="600" loading="lazy" alt="Explicaí editor on the page Check the month's bills: the screenshot of the Finance system already pasted into the text.">
 </li>
 <li class="passo">
 <h3><span class="n">2</span> <span class="marca">Mark the screen.</span></h3>
 <p>Add numbered markers, highlights, arrows and clickable areas, and write what the reader does at each one.</p>
-<img src="../img/passo-2-en.webp" width="1000" height="700" loading="lazy" alt="Screenshot of the Accounts payable screen in the editor, with three numbered markers, the New bill button highlighted in yellow and the caption for each number just below.">
 </li>
 <li class="passo">
 <h3><span class="n">3</span> Export.</h3>
 <p>Generate PDF, HTML or Markdown in one click.</p>
-<img src="../img/passo-3-en.webp" width="1000" height="700" loading="lazy" alt="Export manual dialog with three formats to choose from: Site (HTML), PDF and Markdown for AI.">
 </li>
 </ol>
 <p class="nota apoio">Explicaí does not capture the screen. The screenshot comes from you.</p>
@@ -105,10 +96,6 @@
 <ul class="junto">
 <li><h3>Hide data</h3><p>A bar or a blur burned into the screenshot pixels. The original is deleted.</p></li>
 <li><h3>Client branding</h3><p>Logo on the cover, theme colors and nine fonts that travel with the HTML.</p></li>
-<li><h3>Crop and shrink</h3><p>Crop the screenshot, pick its size and cut the weight without scaling up.</p></li>
-<li><h3>Review</h3><p>A status per page, export of approved pages only, and manual versions.</p></li>
-<li><h3>Editor</h3><p>Alerts, the <code>/</code> menu, tables and text color.</p></li>
-<li><h3>Editing outside Studio</h3><p>If another editor touches the page, Studio warns you instead of overwriting.</p></li>
 </ul>
 <p><a href="features/">See all features →</a></p>
 </div>
@@ -123,52 +110,12 @@
 </div>
 </section>
 
-<section class="formatos">
-<div class="wrap dois">
-<div>
-<p class="rotulo">Formats</p>
-<h2>PDF for people who read. Markdown for people who automate.</h2>
-<p>Every manual is a folder of Markdown with its images, kept in git next to your code. People read the PDF or the HTML site. An AI reads the same files.</p>
-</div>
-<pre tabindex="0" aria-label="Example of a manual folder and of a Markdown page"><code>finance/
-  manual.json
-  pages/
-    add-a-bill.md
-  assets/
-    accounts-payable.png
-    accounts-payable.png.json
-
----
-title: Add a bill
----
-
-1. Open **Accounts payable** in the side menu.
-2. Click **New bill**.
-3. Fill in supplier, amount and due date.
-
-![Accounts payable screen](../assets/accounts-payable.png)</code></pre>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<p class="rotulo">Open and free</p>
-<h2>MIT license, code on GitHub.</h2>
-<p style="margin-top:16px;max-width:40rem">The build process is written up on the blog. Documenting a system should not cost more than building it.</p>
-<div class="links">
-<a href="https://github.com/gabriel-codesampaio/explicai-studio">Code on GitHub</a>
-<a href="https://codesampa.io/en-US/blog">Read the “Explicaí #N” posts</a>
-</div>
-</div>
-</section>
-
 <section>
 <div class="wrap">
 <p class="rotulo">Quick questions</p>
 <h2>What stands between you and installing</h2>
 <dl>
 <div><dt>Do I need an account?</dt><dd>No. Explicaí runs on <code>localhost</code> and saves to a folder you choose.</dd></div>
-<div><dt>Does it work in Portuguese and English?</dt><dd>The interface does. The manual is in whatever language you write the steps in.</dd></div>
 <div><dt>What about my client's data in the screenshots?</dt><dd>Use the Hide tool: it burns a bar or a blur into the pixels and deletes the original. Everything runs on your machine. Old exports still hold the original, so export again.</dd></div>
 <div><dt>What do I need to install?</dt><dd>Node 20.12 or newer. <code>npx</code> fetches the rest.</dd></div>
 </dl>
