@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explicaí Studio features: hide data, client branding and more</title>
+<meta name="description" content="Hide data in screenshots, add the client's logo and colors, crop, review and export to PDF, HTML and Markdown. All local, no account, open source.">
+<link rel="canonical" href="https://gabriel-codesampaio.github.io/explicai-website/en/features/">
+<meta name="theme-color" content="#f5f6fa" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#0e1120" media="(prefers-color-scheme:dark)">
+<link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+<link rel="alternate" hreflang="pt-BR" href="https://gabriel-codesampaio.github.io/explicai-website/features/">
+<link rel="alternate" hreflang="en-US" href="https://gabriel-codesampaio.github.io/explicai-website/en/features/">
+<link rel="alternate" hreflang="x-default" href="https://gabriel-codesampaio.github.io/explicai-website/features/">
+<meta property="og:title" content="Explicaí Studio: what it does with your screenshots">
+<meta property="og:description" content="Hide data, client branding, crop, review and export. Open source and local.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gabriel-codesampaio.github.io/explicai-website/img/social-preview-en.png">
+<meta property="og:image:alt" content="Snap it, explain it. Explicaí builds the manual. Explicaí logo on a blue background with three numbered markers.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../../fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../copy.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap">
+<a href="../" aria-label="Explicaí, home"><picture><source srcset="../../img/explicai-logo-horizontal-escuro.svg" media="(prefers-color-scheme:dark)"><img src="../../img/explicai-logo-horizontal.svg" alt="" width="122" height="26"></picture></a>
+<nav aria-label="Main">
+<a href="../demo/">Demo</a>
+<a href="./" aria-current="page">Features</a>
+<a href="https://github.com/gabriel-codesampaio/explicai-studio">GitHub</a>
+<a href="https://codesampa.io/en-US/blog">Blog</a>
+<span class="lang"><a href="../../features/" lang="pt-BR" hreflang="pt-BR">PT</a><a href="./" lang="en-US" hreflang="en-US" aria-current="page">EN</a></span>
+</nav>
+</div>
+</header>
+<main id="main">
+
+<section class="rec-topo">
+<div class="wrap">
+<p class="rotulo">Features · Studio 0.2</p>
+<h1><span class="marca">From a loose screenshot to the client's manual.</span></h1>
+<p class="lead">Studio handles what comes after the paste: hiding sensitive data, dressing the manual in the client's brand, reviewing and exporting.</p>
+<ol class="indice">
+<li><a href="#ocultar">Hide data</a></li>
+<li><a href="#marca">Client branding</a></li>
+<li><a href="#recortar">Crop and shrink</a></li>
+<li><a href="#marcacoes">Markups</a></li>
+<li><a href="#revisao">Review</a></li>
+<li><a href="#editor">Editor</a></li>
+<li><a href="#exportacao">Export</a></li>
+<li><a href="#local">Local and open</a></li>
+</ol>
+</div>
+</section>
+
+<section class="rec" id="ocultar">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">01</span><h2>Hide the client's data before the screenshot leaves your machine.</h2><p>Select the area with the Hide tool (key O) and pick a bar or a blur. Studio burns the effect into the image pixels and deletes the original. No layer is left for someone to remove later.</p><ul class="det"><li><b>Bar or strong blur.</b> The bar is the default. The blur pixelates and smears the area.</li><li><b>Original deleted.</b> If the manual folder is in git, Studio warns you first.</li><li><b>Old exports.</b> An on-screen reminder says HTML and PDF files you already made still hold the original. Export again.</li><li><b>Nothing happens until you apply.</b> Leaving without applying asks for confirmation.</li></ul></div>
+<figure><img src="../../img/feat-ocultar-en.webp" width="1280" height="800" loading="eager" alt="Edit image window with the Hide tool active: a dark bar covers the Fornecedor column of the Contas a pagar table, and the side panel offers Bar, Blur and Apply hiding."><figcaption>The bar covers the supplier column before you apply it.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt inv" id="marca">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">02</span><h2>The manual comes out looking like the client's.</h2><p>In the export dialog you upload the logo and pick the colors and fonts. Each manual keeps its own theme, so one client's look never leaks into another's.</p><ul class="det"><li><b>Logo on the cover.</b> It also shows at the top of the contents, in HTML and PDF. PNG, JPG and SVG.</li><li><b>Theme colors.</b> Text, accent, highlight and each heading level, with ready palettes and the color code.</li><li><b>Nine fonts.</b> Archivo, Atkinson Hyperlegible Next, Inter, Source Sans 3, Source Serif 4, Lora, Montserrat, Playfair Display and JetBrains Mono. They travel with the exported HTML, no network needed.</li><li><b>Contrast warning.</b> The dialog warns you when a color does not reach 4.5:1 against white.</li></ul></div>
+<figure><img src="../../img/feat-marca-en.webp" width="1280" height="949" loading="lazy" alt="Export manual dialog with the Website, PDF and Markdown formats, the Client logo field and the manual colors, with the Plum palette selected."><figcaption>Logo, colors and fonts live in the export dialog.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec" id="recortar">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">03</span><h2>Crop, resize and slim down the screenshot.</h2><p>Full-screen shots are heavy and distracting. Crop what matters, choose how much room the image takes and shrink the file.</p><ul class="det"><li><b>Crop (R).</b> Markups follow the crop, and the confirmation lists the ones that will go away.</li><li><b>Size.</b> Small, Medium or Large. It is stored next to the image and applies in the editor, HTML and PDF.</li><li><b>Reduce resolution and weight.</b> Suggests 1600 px wide and never scales an image up.</li></ul></div>
+<figure><img src="../../img/feat-tamanho-en.webp" width="1280" height="800" loading="lazy" alt="Editor with the image selected and its popover showing the image description, the Small, Medium and Large sizes and the Edit image button."><figcaption>The image popover: description, size and editing.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt inv" id="marcacoes">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">04</span><h2>Mark up the screen and explain each point.</h2><p>Numbered markers, highlights, arrows and clickable areas, with a caption for each number. The same markup shows in the editor, HTML and PDF.</p><ul class="det"><li><b>Letter shortcuts.</b> V selects, M places a marker, D highlights, S draws an arrow, A makes a clickable area.</li><li><b>Clickable area.</b> A spot on the screenshot becomes a link to another page of the manual.</li><li><b>Captions.</b> Readers see the number and what it points at, right below the image.</li></ul></div>
+<figure><img src="../../img/passo-2-en.webp" width="1000" height="700" loading="lazy" alt="Screenshot of the Contas a pagar screen in the editor, with three numbered markers, the Nova conta button highlighted in yellow and a caption for each number below it."><figcaption>Markers, highlight and captions on a screenshot.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec" id="revisao">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">05</span><h2>Review before you send.</h2><p>Every page has a status, and the final manual can carry only what was approved.</p></div>
+<div class="side"><ul class="det"><li><b>Status per page.</b> Draft, approved, published: shown above the editor.</li><li><b>Approved pages only.</b> An export option so the client never gets half-written text.</li><li><b>Versions.</b> Mark the “Manual version” that counts as final. Export uses it or, without one, the current text.</li></ul></div>
+</div>
+</section>
+
+<section class="rec alt" id="editor">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">06</span><h2>An editor that stays out of the way.</h2><p>Text, steps and images on the same page, with the blocks a manual needs.</p></div>
+<div class="side"><ul class="det"><li><b>Alerts.</b> Saved as GFM alerts and exported with a text label and a color per type.</li><li><b>The <code>/</code> menu.</b> Grouped blocks, with a preview.</li><li><b>Tables.</b> Row and column controls right on the table.</li><li><b>Text color.</b> A fixed palette, with the name of each color.</li><li><b>Paste screenshot.</b> A button, and Ctrl+V in plain sight.</li></ul><pre tabindex="0"><code>> [!WARNING]
+> Check the due date before saving.</code></pre></div>
+</div>
+</section>
+
+<section class="rec" id="exportacao">
+<div class="wrap">
+<div class="txt"><span class="num" aria-hidden="true">07</span><h2>PDF to read, HTML to publish, Markdown for the AI.</h2><p>One click makes the format. Markdown comes out as a single file, with screenshot captions as text.</p><div class="fmts"><div><code>PDF</code><span>To print or send by email.</span></div><div><code>HTML</code><span>One file to publish or open in the browser.</span></div><div><code>MD</code><span>A single file, with screenshot captions as text.</span></div></div></div>
+<figure><img src="../../img/passo-3-en.webp" width="1000" height="700" loading="lazy" alt="Export manual window with three formats to choose from: Website (HTML), PDF and Markdown for AI."><figcaption>The three formats in the export dialog.</figcaption></figure>
+</div>
+</section>
+
+<section class="rec alt" id="local">
+<div class="wrap so-texto">
+<div class="txt"><span class="num" aria-hidden="true">08</span><h2>Runs on your machine. No account, no cloud.</h2><p>Studio opens on localhost and saves to a folder of yours: Markdown and images, versioned in git next to the code. MIT license.</p></div>
+<div class="side"><ul class="det"><li><b>No account.</b> Nothing to sign up for and nothing sent out.</li><li><b>Editing outside Studio.</b> If another editor touches the page, Studio warns you instead of overwriting.</li><li><b>English and Portuguese.</b> The interface switches language. The manual stays in whatever language you write it.</li></ul></div>
+</div>
+</section>
+
+<section class="final rec-final">
+<div class="wrap">
+<h2>Snap it, explain it. Explicaí builds the manual.</h2>
+<div class="cmd">
+<code tabindex="0">npx explicai manuals</code>
+<button class="btn" type="button" hidden data-copy="npx explicai manuals" data-done="Copied" data-fail="Copy it by hand">Copy command</button>
+</div>
+<p class="apoio">Needs Node 20.12 or newer.</p>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<span>a project by <a href="https://codesampa.io">codesampa.io</a></span>
+<span>MIT</span>
+<a href="https://github.com/gabriel-codesampaio/explicai-studio">GitHub</a>
+<a href="https://www.npmjs.com/package/explicai">npm</a>
+<a href="https://codesampa.io/en-US/blog">Blog</a>
+<a href="https://gabriel-codesampaio.github.io/explicai-brandbook/">Brand book</a>
+</div>
+</footer>
+</body>
+</html>
