@@ -2,7 +2,7 @@
 
 - Prioridade: P2
 - Tamanho: P
-- Status: aberto
+- Status: feito
 - Agente: frontend
 - Origem: critique da landing, 2026-11-03 (docs/discovery/2026-11-03-critique-landing.md)
 
@@ -10,8 +10,11 @@
 Em site/en/features/index.html (linha 85) o alt do print de Marcações diz "Contas a pagar" e "Nova conta", mas a imagem en mostra "Accounts payable" e "New bill". Leitor de tela lê o alt errado.
 
 ## Critérios de aceite
-- [ ] Alt do passo-2-en cita os rótulos que a imagem en mostra (Accounts payable, New bill).
-- [ ] grep por palavras em português em site/en/ só acha nome próprio ou trecho citado de propósito.
+- [x] Alt do passo-2-en cita os rótulos que a imagem en mostra (Accounts payable, New bill).
+- [x] grep por palavras em português em site/en/ só acha nome próprio ou trecho citado de propósito.
 
 ## Onde
 site/en/features/index.html
+
+## Registro
+Alt do print de marcações reescrito junto com a imagem (Accounts payable, New bill, Bill status). grep por palavras em português em site/en/ só acha nomes de arquivo de imagem.

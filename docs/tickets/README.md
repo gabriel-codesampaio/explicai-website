@@ -11,14 +11,6 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
 | [T-012](T-012-pagina-de-recursos-e-secao-o-que-vem-junto.md) | Página de recursos e seção "O que vem junto" | P1 | em andamento | supervisor |
-| [T-013](T-013-prints-de-marcacoes-e-exportacao-desatualizados.md) | Prints de Marcações e Exportação em Recursos estão desatualizados | P2 | aberto | frontend |
-| [T-014](T-014-alt-em-portugues-na-pagina-en.md) | Alt de imagem em português na página de recursos em inglês | P2 | aberto | frontend |
-| [T-015](T-015-prints-claros-no-tema-escuro.md) | Prints do produto são caixas brancas no tema escuro | P2 | aberto | frontend |
-| [T-016](T-016-print-do-heroi.md) | Print do herói: barra de rolagem gravada, marcadores sobre o texto, ilegível | P2 | aberto | frontend |
-| [T-017](T-017-secao-veja-pronto-isolada-na-home.md) | Seção "Veja pronto" isolada na home | P2 | aberto | frontend |
-| [T-018](T-018-home-nao-diz-para-quem-e.md) | A home não diz para quem é | P2 | aberto | frontend |
-| [T-019](T-019-enxugar-pagina-de-recursos.md) | Enxugar a página de recursos | P2 | aberto | frontend |
-| [T-020](T-020-texto-da-home-repete-e-afirma-sem-prova.md) | Texto da home repete os passos e afirma sem prova | P3 | aberto | frontend |
 
 ## Fechados
 
@@ -35,3 +27,11 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 | [T-009](fechados/T-009-prints-do-produto-com-fundo-branco-no-tema-es.md) | Prints do produto com fundo branco no tema escuro | P3 | descartado | - |
 | [T-010](fechados/T-010-imagens-de-compartilhamento-mostram-github-co.md) | Imagens de compartilhamento mostram github.com/gabriel-codesampaio/explicai | P3 | feito | 6ccf97e |
 | [T-011](fechados/T-011-configurar-os-repositorios-no-github-descrica.md) | Configurar os repositórios no GitHub (descrição, homepage, topics, README) | P2 | feito | - |
+| [T-013](fechados/T-013-prints-de-marcacoes-e-exportacao-desatualizados.md) | Prints de Marcações e Exportação em Recursos estão desatualizados | P2 | feito | 1601bea |
+| [T-014](fechados/T-014-alt-em-portugues-na-pagina-en.md) | Alt de imagem em português na página de recursos em inglês | P2 | feito | 1601bea |
+| [T-015](fechados/T-015-prints-claros-no-tema-escuro.md) | Prints do produto são caixas brancas no tema escuro | P2 | feito | 1601bea |
+| [T-016](fechados/T-016-print-do-heroi.md) | Print do herói: barra de rolagem gravada, marcadores sobre o texto, ilegível | P2 | feito | 1601bea |
+| [T-017](fechados/T-017-secao-veja-pronto-isolada-na-home.md) | Seção "Veja pronto" isolada na home | P2 | feito | 966b89e |
+| [T-018](fechados/T-018-home-nao-diz-para-quem-e.md) | A home não diz para quem é | P2 | feito | ecb1c32 |
+| [T-020](fechados/T-020-texto-da-home-repete-e-afirma-sem-prova.md) | Texto da home repete os passos e afirma sem prova | P3 | feito | ecb1c32 |
+| [T-019](fechados/T-019-enxugar-pagina-de-recursos.md) | Enxugar a página de recursos | P2 | feito | f061f42 |
