@@ -3,7 +3,7 @@
 @font-face{font-family:"Atkinson Hyperlegible Next";src:url(fonts/atkinson-hyperlegible-next-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
 @font-face{font-family:"JetBrains Mono";src:url(fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2");font-weight:100 800;font-display:swap}
 :root{--papel:#f5f6fa;--tinta:#151a33;--grafite:#575e78;--linha:#dce0eb;--cobalto:#2b4fe0;--sobre-cobalto:#fff;--marca:#ffd43b;--faixa:rgba(255,212,59,.55);color-scheme:light dark}
-@media (prefers-color-scheme:dark){:root{--papel:#0e1120;--tinta:#eceef7;--grafite:#a3aac4;--linha:#2a3050;--cobalto:#8098ff;--sobre-cobalto:#0e1120;--faixa:rgba(255,212,59,.3)}}
+@media (prefers-color-scheme:dark){:root{--papel:#0e1120;--tinta:#eceef7;--grafite:#a3aac4;--linha:#2a3050;--cobalto:#7088ff;--sobre-cobalto:#0e1120;--faixa:rgba(255,212,59,.3)}}
 body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.125rem/1.6 "Atkinson Hyperlegible Next",system-ui,sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}

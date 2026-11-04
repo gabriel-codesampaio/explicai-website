@@ -154,7 +154,7 @@ Base: o conceito da marca, "mesa de revisão": papel, caneta azul, marca-texto, 
 | Fundo | `#F5F6FA` | `#0E1120` |
 | Texto | `#151A33` | `#ECEEF7` |
 | Texto secundário | `#575E78` | `#A3AAC4` |
-| Cobalto (ação, link, número) | `#2B4FE0` | `#8098FF` |
+| Cobalto (ação, link, número) | `#2B4FE0` | `#7088FF` |
 | Texto sobre cobalto | `#FFFFFF` | `#0E1120` |
 | Linha | `#DCE0EB` | `#2A3050` |
 | Marca-texto | `#FFD43B` (faixa 55%) | `#FFD43B` (faixa 30%) |
@@ -308,7 +308,7 @@ Total: **G** se for tudo de uma vez; entregável em fatias.
 - A URL do Pages abre a landing; `/demo/` e `/en/` abrem sob o subcaminho com todos os recursos.
 - Texto igual ao deste documento (ou ao que a pessoa ajustar). Nenhum depoimento, número de uso, "usado por" nem comparação com concorrente. `humanizer` passado na versão final.
 - Um botão sólido por trecho de tela; cores só dos tokens; sem gradiente; sem ícone decorativo; marca-texto no máximo uma vez por seção.
-- Claro e escuro com contraste de texto 4,5:1 medido (inclusive texto sobre o marca-texto no escuro e o botão `#0E1120` sobre `#8098FF`). Foco visível. Operação só com teclado. `alt` em todo print descrevendo a marcação. `lang` e `hreflang` certos.
+- Claro e escuro com contraste de texto 4,5:1 medido (inclusive texto sobre o marca-texto no escuro e o botão `#0E1120` sobre `#7088FF`). Foco visível. Operação só com teclado. `alt` em todo print descrevendo a marcação. `lang` e `hreflang` certos.
 - 375 px sem rolagem horizontal da página; alvos de toque de pelo menos 44 px; comando legível.
 - Copiar comando funciona (clipboard); sem JS, o texto continua selecionável.
 - Core Web Vitals em 375 px com throttling: LCP até 2,5 s, CLS até 0,1, INP até 200 ms; peso inicial abaixo de 300 KB sem as imagens lazy. Nenhuma requisição para domínio externo.
