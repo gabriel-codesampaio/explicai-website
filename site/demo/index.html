@@ -11,21 +11,33 @@
 @font-face{font-family:"Archivo";src:url(fonts/archivo-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:block}
 @font-face{font-family:"JetBrains Mono";src:url(fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:block}
 
-:root{--accent:#2b4fe0;--anotacao:#2b4fe0;--anotacao-fundo:rgba(43,79,224,.08);--sobre-anotacao:#fff;--marca:#ffd43b;--marca-faixa:rgba(255,212,59,.55);--t-cover:#000;--t-page:#000;--t-h1:#000;--t-h2:#000;--t-h3:#000;--marca-faixa:rgba(255,212,59,.55);--tinta:#151a33;--grafite:#575e78;--linha:#dce0eb;--papel:#f5f6fa;
+:root{--accent:#2b4fe0;--anotacao:#2b4fe0;--anotacao-fundo:rgba(43,79,224,.08);--sobre-anotacao:#fff;--marca:#ffd43b;--marca-faixa:rgba(255,212,59,.55);--t-cover:#151a33;--t-page:#151a33;--t-h1:#151a33;--t-h2:#151a33;--t-h3:#151a33;--marca-faixa:rgba(255,212,59,.55);--tinta:#151a33;--grafite:#575e78;--linha:#dce0eb;--papel:#f5f6fa;
 --texto:"Atkinson Hyperlegible Next","Segoe UI",system-ui,sans-serif;--display:"Archivo","Arial Narrow",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Consolas,monospace}
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:var(--tinta);font:16px/1.65 var(--texto);-webkit-font-smoothing:antialiased}
 .layout{display:grid;grid-template-columns:17rem minmax(0,1fr)}
 .toc{position:sticky;top:0;height:100vh;overflow:auto;padding:24px 16px;background:var(--papel);border-right:1px solid var(--linha)}
+.toc summary{display:none}
 .toc-title{margin:0 0 12px;font:800 18px/1.2 var(--display)}
 .toc ol{list-style:none;margin:0;padding:0}
 .toc li{padding-left:calc(var(--d) * 14px)}
 .toc a{display:block;padding:4px 6px;border-radius:6px;color:var(--tinta);text-decoration:none;font-size:14px}
 .toc a:hover{background:#e9ecf5}
+.toc li.sec a{font-size:13px;color:var(--grafite)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.cover .start{font-size:18px}
+.cover .start a{color:var(--accent)}
+.page-nav{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;margin-top:32px;padding-top:12px;border-top:1px solid var(--linha);font-size:15px}
+.page-nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent)}
+.page-nav .back{display:none}
+a.zoom{display:block;cursor:zoom-in}
 .num{font-family:var(--mono);font-size:.8em;color:var(--accent);margin-right:4px}
 main{max-width:52rem;padding:32px 40px 96px;margin:0 auto;width:100%}
 .cover{padding:48px 0 32px;border-bottom:3px solid var(--marca);margin-bottom:24px}
 .cover h1{margin:0;color:var(--t-cover);font:800 clamp(32px,5vw,48px)/1.1 var(--display);letter-spacing:-.02em}
+.logo{display:block;width:auto;height:auto;object-fit:contain}
+.cover .logo{max-height:96px;max-width:min(280px,100%);margin:0 0 24px}
+.toc .logo{max-height:48px;max-width:100%;margin:0 0 16px}
 .cover p{margin:8px 0 0;color:var(--grafite)}
 .page{padding-top:32px;scroll-margin-top:16px}
 .page-title{margin:0 0 12px;color:var(--t-page);font:800 30px/1.2 var(--display);letter-spacing:-.01em}
@@ -34,18 +46,22 @@ main{max-width:52rem;padding:32px 40px 96px;margin:0 auto;width:100%}
 .page-body h3{font-size:22px}.page-body h4{font-size:19px}.page-body h5,.page-body h6{font-size:17px}
 .page-body p{margin:.6em 0}
 .page-body a{color:var(--accent);text-underline-offset:.2em}
+.page-body mark{background:var(--marca-faixa);color:inherit;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page-body mark [data-color="orange"]{color:#a34400}.page-body mark [data-color="green"]{color:#137034}
 .page-body code{font:.88em var(--mono);background:var(--papel);border:1px solid var(--linha);border-radius:4px;padding:.05em .35em}
 .page-body pre{font:14px/1.5 var(--mono);background:var(--papel);border:1px solid var(--linha);border-radius:8px;padding:12px 14px;overflow-x:auto}
 .page-body pre code{background:none;border:0;padding:0}
+.page-body hr{border:0;border-top:1px solid var(--linha);margin:1.5em 0}
 .page-body blockquote{margin:.6em 0;padding:2px 0 2px 16px;border-left:2px solid var(--linha);color:var(--grafite)}
 .page-body table{border-collapse:collapse;width:100%;margin:.8em 0;font-size:15px}
 .page-body th,.page-body td{border:1px solid var(--linha);padding:6px 10px;text-align:left;vertical-align:top}
 .page-body th{background:var(--papel)}
 .page-body ul{padding-left:1.4em}
-.page-body>ol,.page-body li>ol{list-style:none;counter-reset:passo;padding-left:2.25em}
-.page-body>ol>li,.page-body li>ol>li{counter-increment:passo;position:relative}
+.page-body>ol,.page-body li>ol{list-style:none;padding-left:2.25em}
+.page-body>ol>li,.page-body li>ol>li{position:relative}
 .page-body>ol>li+li,.page-body li>ol>li+li{margin-top:.6em}
-.page-body>ol>li::before,.page-body li>ol>li::before{content:counter(passo);position:absolute;left:-2.25em;top:.12em;display:grid;place-items:center;width:1.55em;height:1.55em;border-radius:50%;background:var(--accent);color:#fff;font:700 .82em var(--mono)}
+.page-body>ol>li::before,.page-body li>ol>li::before{content:counter(list-item);position:absolute;left:-2.25em;top:.12em;display:grid;place-items:center;width:1.55em;height:1.55em;border-radius:50%;background:var(--accent);color:#fff;font:700 .82em/1 var(--mono)}
+@supports(text-box:trim-both cap alphabetic){.page-body>ol>li::before,.page-body li>ol>li::before{display:block;height:auto;padding-block:calc((1.55em - 1cap)/2);text-align:center;text-box:trim-both cap alphabetic}}
 .page-body li>blockquote{margin:.6em 0 0;padding:0;border:0;color:var(--tinta)}
 .page-body li>blockquote>p{display:inline;background:linear-gradient(transparent 50%,var(--marca-faixa) 50%)}
 .page-body li>blockquote>p>strong:first-child{font:700 .78em var(--mono);letter-spacing:.04em;text-transform:uppercase}
@@ -56,7 +72,8 @@ main{max-width:52rem;padding:32px 40px 96px;margin:0 auto;width:100%}
 .shot{display:block;margin:.6em 0}
 
 .shot{display:block;margin:.6em 0}
-.frame{position:relative;display:block;max-width:100%;width:fit-content;isolation:isolate}
+.shot-s{--shot-w:40%}.shot-m{--shot-w:70%}.shot-full{--shot-w:100%}
+.frame{position:relative;display:block;max-width:var(--shot-w,100%);width:fit-content;isolation:isolate}
 .frame img{display:block;max-width:100%;height:auto;border:1px solid var(--linha);border-radius:8px}
 .hl{position:absolute;border:2px solid var(--marca);border-radius:3px}
 .hl::before{content:"";position:absolute;inset:0;background:var(--marca);mix-blend-mode:multiply}
@@ -66,44 +83,65 @@ main{max-width:52rem;padding:32px 40px 96px;margin:0 auto;width:100%}
 .arrows polygon{fill:var(--anotacao)}
 .arrows .halo{stroke:#fff;stroke-opacity:.9;stroke-linejoin:round}
 .arrows polygon.halo{fill:#fff}
-.mk{position:absolute;transform:translate(-50%,-50%);width:32px;height:32px;border:2px dashed var(--anotacao);border-radius:50%;box-shadow:0 0 0 2px #fff,inset 0 0 0 2px #fff}
-.mk::before{content:attr(data-n);position:absolute;left:-12px;top:-12px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--anotacao);color:var(--sobre-anotacao);font:600 11px var(--mono);box-shadow:0 0 0 2px #fff}
-.legend{display:grid;gap:2px;margin-top:12px;font-size:15px;line-height:1.4}
-.legend .row{display:flex;align-items:baseline;gap:4px}
-.legend .n{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:50%;background:var(--anotacao);color:var(--sobre-anotacao);font:600 11px var(--mono)}
-.legend .n+span{margin-left:2px}
-.legend .none{color:var(--grafite);font-style:italic}
+.mk{position:absolute;width:0;height:0}
+.mk .tail{position:absolute;left:0;top:0;overflow:visible}
+.mk .tail polygon{fill:var(--anotacao);stroke:#fff;stroke-width:2;stroke-linejoin:round;paint-order:stroke}
+.mk .disc{position:absolute;left:-12px;top:-12px;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--anotacao);box-shadow:0 0 0 2px #fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+.mk .disc::before{content:attr(data-n);color:var(--sobre-anotacao);font:600 13px/1 var(--mono)}
+.legend{display:grid;gap:6px;margin-top:16px;font-size:15px;line-height:1.4}
+.legend .row{display:flex;align-items:center;gap:10px;break-inside:avoid}
+.legend .n{display:inline-grid;place-items:center;box-sizing:border-box;min-width:24px;height:24px;padding:0 4px;border-radius:12px;background:var(--anotacao);color:var(--sobre-anotacao);font:600 13px/1 var(--mono);print-color-adjust:exact;-webkit-print-color-adjust:exact}
+@supports(text-box:trim-both cap alphabetic){.mk .disc::before{text-box:trim-both cap alphabetic}.legend .n{display:inline-block;height:auto;padding-block:calc((24px - 1cap)/2);text-align:center;text-box:trim-both cap alphabetic}}
 
 .missing{color:#c8411f;font-style:italic}
 [data-color="gray"]{color:#5c6478}[data-color="red"]{color:#c3261b}[data-color="orange"]{color:#b04a00}[data-color="green"]{color:#17793a}[data-color="blue"]{color:#1f58d6}[data-color="purple"]{color:#7a3cc8}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .colophon{margin-top:64px;padding-top:16px;border-top:1px solid var(--linha);color:var(--grafite);font-size:13px}
-@media (max-width:800px){.layout{display:block}.toc{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 64px}}
+@media (max-width:800px){.layout{display:block}.toc{position:static;height:auto;border-right:0;border-bottom:1px solid var(--linha)}main{padding:24px 20px 64px}
+.toc summary{display:flex;align-items:center;min-height:44px;font-weight:700;cursor:pointer}
+.toc a{padding:10px 6px}
+.page-nav .back{display:inline-flex}}
 @media print{
 @page{margin:18mm 16mm}
 body{font-size:11.5pt}
-.layout{display:block}.toc{display:none}main{max-width:none;padding:0}
+.layout{display:block}.toc,.page-nav{display:none}main{max-width:none;padding:0}
 .cover{padding:30vh 0 0;border:0;break-after:page}
 .page{break-before:page;padding-top:0}
 .shot,.callout,.page-body table,.page-body pre,.page-body li{break-inside:avoid}
 .page-body a{color:var(--tinta)}
 .hot{border-style:dashed}
 }
+.toc-search{margin:0 0 12px}
+.toc-search label{display:block;margin-bottom:4px;font:700 13px var(--mono)}
+.toc-search input{width:100%;min-height:44px;padding:6px 10px;border:1px solid var(--grafite);border-radius:6px;background:#fff;color:var(--tinta);font:inherit;font-size:15px}
+.toc-search input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.toc-search [role=status]{margin:4px 0 0;color:var(--grafite);font-size:13px}
+@media screen{.page.hit{box-shadow:-12px 0 0 -8px var(--marca)}.toc li.hit>a{background:var(--marca-faixa)}.toc li.hit>a:hover{background:var(--marca)}}
+@media (forced-colors:active){.toc li.hit>a{border:1px solid Highlight}.page.hit{border-left:4px solid Highlight}}
 </style>
 </head>
 <body>
 <div class="layout">
-<nav class="toc" aria-label="Sumário">
+<nav class="toc" id="sumario" aria-label="Sumário">
 <p class="toc-title">Financeiro</p>
+<div class="toc-search" hidden data-zero="Nenhuma página com esse termo" data-one="1 página com esse termo" data-many="{n} páginas com esse termo">
+<label for="toc-q">Buscar no manual</label>
+<input id="toc-q" type="search" autocomplete="off" spellcheck="false">
+<p role="status" aria-live="polite"></p>
+</div>
+<details open>
+<summary>Sumário</summary>
 <ol>
 <li style="--d:0"><a href="#p-3f2c9a10-6b1e-4c11-9a77-0d3a5b8e1c01"><span class="num">1</span> Cadastrar conta a pagar</a></li>
 <li style="--d:0"><a href="#p-7c1d2e44-8a53-4f0b-b6a2-91e5d0c4f202"><span class="num">2</span> Conferir as contas do mês</a></li>
 </ol>
+</details>
 </nav>
 <main>
 <header class="cover">
 <h1>Financeiro</h1>
-<p>2 páginas</p>
+<p>2 páginas, cerca de 1 min de leitura</p>
+<p class="start">Comece por <a href="#p-3f2c9a10-6b1e-4c11-9a77-0d3a5b8e1c01">Cadastrar conta a pagar</a></p>
 </header>
 <section class="page" id="p-3f2c9a10-6b1e-4c11-9a77-0d3a5b8e1c01">
 <h2 class="page-title"><span class="num">1</span> Cadastrar conta a pagar</h2>
@@ -113,18 +151,46 @@ body{font-size:11.5pt}
 <li>Clique em <strong>Nova conta</strong>.</li>
 <li>Preencha fornecedor, valor e vencimento. A conta aparece na lista como <strong>A pagar</strong>.</li>
 </ol>
-<p><span class="shot"><span class="frame" style="aspect-ratio:1200 / 700"><img src="assets/contas-a-pagar.png" alt="Tela Contas a pagar do sistema Financeiro" loading="lazy"><span class="hl" style="left:87.700%;top:11.600%;width:9.300%;height:5.700%"></span><span class="mk" style="left:15.500%;top:17.500%" data-n="1" aria-hidden="true"></span><span class="mk" style="left:87.700%;top:11.600%" data-n="2" aria-hidden="true"></span><span class="mk" style="left:86.000%;top:29.700%" data-n="3" aria-hidden="true"></span></span><span class="legend" role="list" aria-label="Legenda da imagem"><span class="row" role="listitem"><span class="n">1</span><span>Abra Contas a pagar</span></span><span class="row" role="listitem"><span class="n">2</span><span>Clique em Nova conta</span></span><span class="row" role="listitem"><span class="n">3</span><span>A conta entra como A pagar</span></span></span></span></p>
+<p><span class="shot"><span class="frame" style="aspect-ratio:1200 / 700"><a class="zoom" href="assets/contas-a-pagar.png" target="_blank" rel="noopener"><img src="assets/contas-a-pagar.png" alt="Tela Contas a pagar do sistema Financeiro" width="1200" height="700" loading="lazy"><span class="sr">Abrir a imagem no tamanho original</span></a><span class="hl" style="left:87.700%;top:11.600%;width:9.300%;height:5.700%"></span><span class="mk" style="left:15.500%;top:17.500%" aria-hidden="true"><svg class="tail" width="1" height="1" aria-hidden="true"><polygon points="0.0,0.0 7.7,-17.3 17.3,-7.7"/></svg><span class="disc" style="transform:translate(19.5px,-19.5px)" data-n="1"></span></span><span class="mk" style="left:87.700%;top:11.600%" aria-hidden="true"><svg class="tail" width="1" height="1" aria-hidden="true"><polygon points="0.0,0.0 -17.7,6.8 -17.7,-6.8"/></svg><span class="disc" style="transform:translate(-27.6px,0.0px)" data-n="2"></span></span><span class="mk" style="left:86.000%;top:29.700%" aria-hidden="true"><svg class="tail" width="1" height="1" aria-hidden="true"><polygon points="0.0,0.0 7.7,-17.3 17.3,-7.7"/></svg><span class="disc" style="transform:translate(19.5px,-19.5px)" data-n="3"></span></span></span><span class="legend" role="list" aria-label="Legenda da imagem"><span class="row" role="listitem"><span class="n">1</span><span>Abra Contas a pagar</span></span><span class="row" role="listitem"><span class="n">2</span><span>Clique em Nova conta</span></span><span class="row" role="listitem"><span class="n">3</span><span>A conta entra como A pagar</span></span></span></span></p>
 <p>Resultado: a conta fica na lista e entra no relatório do mês.</p>
 </div>
+<nav class="page-nav" aria-label="Entre as páginas">
+<a class="back" href="#sumario">Voltar ao sumário</a><a rel="next" href="#p-7c1d2e44-8a53-4f0b-b6a2-91e5d0c4f202">Próxima: Conferir as contas do mês →</a>
+</nav>
 </section>
 <section class="page" id="p-7c1d2e44-8a53-4f0b-b6a2-91e5d0c4f202">
 <h2 class="page-title"><span class="num">2</span> Conferir as contas do mês</h2>
 <div class="page-body"><p>Depois de cadastrar, confira se tudo entrou na lista.</p>
-<p><span class="shot"><span class="frame" style="aspect-ratio:1200 / 700"><img src="assets/relatorio-vazio.png" alt="Lista de contas do mês no sistema Financeiro" loading="lazy"></span></span></p>
+<p><span class="shot"><span class="frame" style="aspect-ratio:1200 / 700"><a class="zoom" href="assets/relatorio-vazio.png" target="_blank" rel="noopener"><img src="assets/relatorio-vazio.png" alt="Lista de contas do mês no sistema Financeiro" width="1200" height="700" loading="lazy"><span class="sr">Abrir a imagem no tamanho original</span></a></span></span></p>
 </div>
+<nav class="page-nav" aria-label="Entre as páginas">
+<a rel="prev" href="#p-3f2c9a10-6b1e-4c11-9a77-0d3a5b8e1c01">← Anterior: Cadastrar conta a pagar</a><a class="back" href="#sumario">Voltar ao sumário</a>
+</nav>
 </section>
 <footer class="colophon">Manual feito com o Explicaí Studio.</footer>
 </main>
 </div>
+<script>(function(){
+function norm(s){return s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase()}
+var box=document.querySelector(".toc-search");if(!box)return;
+var input=box.querySelector("input"),out=box.querySelector("[role=status]");
+var items=[].map.call(document.querySelectorAll(".toc li"),function(li){
+var a=li.querySelector("a"),id=a&&a.getAttribute("href").slice(1),target=id&&document.getElementById(id);
+var page=target&&target.closest(".page");
+return{li:li,sec:li.classList.contains("sec"),page:page,own:norm(li.textContent||""),text:null}});
+var pages=[].slice.call(document.querySelectorAll(".page"));
+var texts=null;
+function run(){
+var q=norm(input.value.trim());
+if(!texts)texts=pages.map(function(p){return norm([].map.call(p.querySelectorAll(".page-title,.page-body"),function(e){return e.textContent}).join(" "))});
+var hit=pages.map(function(p,i){return q!==""&&texts[i].indexOf(q)>-1});
+pages.forEach(function(p,i){p.classList.toggle("hit",hit[i])});
+items.forEach(function(it){
+var on=q===""||(it.sec?it.own.indexOf(q)>-1:!!it.page&&hit[pages.indexOf(it.page)]);
+it.li.hidden=!on;it.li.classList.toggle("hit",q!==""&&on)});
+var n=hit.filter(Boolean).length;
+out.textContent=q===""?"":(n===0?box.dataset.zero:n===1?box.dataset.one:box.dataset.many).replace("{n}",String(n))}
+input.addEventListener("input",run);
+box.hidden=false})();</script>
 </body>
 </html>
