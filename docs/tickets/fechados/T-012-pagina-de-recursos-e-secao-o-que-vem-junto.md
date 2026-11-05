@@ -2,7 +2,7 @@
 
 - Prioridade: P1
 - Tamanho: G
-- Status: em andamento
+- Status: feito
 - Agente: supervisor
 - Origem: Pedido da pessoa 2026-11-03 (Studio 0.2.0 saiu e a home só fala do básico)
 
