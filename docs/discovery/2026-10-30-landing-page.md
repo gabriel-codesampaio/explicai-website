@@ -1,6 +1,6 @@
 # Discovery: landing page do Explicaí, no repositório próprio (2026-10-30)
 
-Complementa: [discovery anterior](../../../explicai/docs/discovery/2026-10-30-landing-page.md) (`explicai/docs/discovery/2026-10-30-landing-page.md`, que recomendava `site/` dentro do repo do Studio). Aqui: repositório `explicai-website`, o texto de cada seção, a direção visual, a stack e a spec. Não repete o que a anterior já decidiu (problema, "a demo é o próprio produto", opção A).
+Complementa: [discovery anterior](https://github.com/gabriel-codesampaio/explicai-studio/blob/main/docs/discovery/2026-10-30-landing-page.md) (`explicai/docs/discovery/2026-10-30-landing-page.md`, que recomendava `site/` dentro do repo do Studio). Aqui: repositório `explicai-website`, o texto de cada seção, a direção visual, a stack e a spec. Não repete o que a anterior já decidiu (problema, "a demo é o próprio produto", opção A).
 
 Ideia original (caderno, `#marca`, 30/10/2026): "Criar uma Landing Page com uma demonstração do Explicaí, adicionar o github pages".
 

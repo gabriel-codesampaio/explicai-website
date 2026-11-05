@@ -10,12 +10,13 @@ Ticket fechado (feito ou descartado) vai para `fechados/` com `git mv`.
 
 | ID | Título | Prioridade | Status | Agente |
 |----|--------|------------|--------|--------|
-| [T-012](T-012-pagina-de-recursos-e-secao-o-que-vem-junto.md) | Página de recursos e seção "O que vem junto" | P1 | em andamento | supervisor |
+| [T-021](T-021-atualizar-features-na-publicacao-1-0-1.md) | Atualizar a página de recursos na publicação 1.0.1 | P2 | aberto | frontend |
 
 ## Fechados
 
 | ID | Título | Prioridade | Status | Commit |
 |----|--------|------------|--------|--------|
+| [T-012](fechados/T-012-pagina-de-recursos-e-secao-o-que-vem-junto.md) | Página de recursos e seção "O que vem junto" | P1 | feito | f061f42 |
 | [T-001](fechados/T-001-pergunta-de-idioma-do-faq-sugeria-que-o-expli.md) | Pergunta de idioma do FAQ sugeria que o Explicaí escreve sozinho | P1 | feito | 16cadc1 |
 | [T-002](fechados/T-002-link-do-manual-de-exemplo-com-alvo-de-24-px.md) | Link do manual de exemplo com alvo de 24 px | P2 | feito | 89051d0 |
 | [T-003](fechados/T-003-pagina-en-com-slogan-em-portugues.md) | Página en com slogan em português | P2 | feito | c02cd6f, 8836cf2 |
