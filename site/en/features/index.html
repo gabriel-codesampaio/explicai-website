@@ -42,7 +42,7 @@
 
 <section class="rec-topo">
 <div class="wrap">
-<p class="rotulo"><a href="../">Explicaí</a> / Features · Studio 0.2</p>
+<p class="rotulo"><a href="../">Explicaí</a> / Features</p>
 <h1><span class="marca">From a loose screenshot to the client's manual.</span></h1>
 <p class="lead">Studio handles what comes after the paste: hiding sensitive data, dressing the manual in the client's brand, reviewing and exporting.</p>
 <ol class="indice">
@@ -67,8 +67,8 @@
 
 <section class="rec alt inv" id="marca">
 <div class="wrap">
-<div class="txt"><span class="num" aria-hidden="true">02</span><h2>The manual comes out looking like the client's.</h2><p>In the export dialog you upload the logo and pick the colors and fonts. Each manual keeps its own theme, so one client's look never leaks into another's.</p><ul class="det"><li><b>Logo on the cover.</b> It also shows at the top of the contents, in HTML and PDF. PNG, JPG and SVG.</li><li><b>Theme colors.</b> Text, accent, highlight and each heading level, with ready palettes and the color code.</li><li><b>Nine fonts.</b> Archivo, Atkinson Hyperlegible Next, Inter, Source Sans 3, Source Serif 4, Lora, Montserrat, Playfair Display and JetBrains Mono. They travel with the exported HTML, no network needed.</li><li><b>Contrast warning.</b> The dialog warns you when a color does not reach 4.5:1 against white.</li></ul></div>
-<figure><picture><source srcset="../../img/feat-marca-en-dark-m.webp" media="(max-width:599px) and (prefers-color-scheme:dark)" width="490" height="306"><source srcset="../../img/feat-marca-en-m.webp" media="(max-width:599px)" width="490" height="306"><source srcset="../../img/feat-marca-en-dark.webp" media="(prefers-color-scheme:dark)"><img src="../../img/feat-marca-en.webp" width="1000" height="720" loading="lazy" alt="Export manual dialog scrolled to the client logo and the manual colors: the Prado Accounting logo is uploaded and the Plum palette is selected."></picture><figcaption>Logo, colors and fonts live in the export dialog.</figcaption></figure>
+<div class="txt"><span class="num" aria-hidden="true">02</span><h2>The manual comes out looking like the client's.</h2><p>In Settings, under Manual appearance, you upload the logo and pick the colors, fonts, cover and footer, with a sample that updates as you go. Each manual keeps its own theme, so one client's look never leaks into another's.</p><ul class="det"><li><b>Logo on the cover.</b> It also shows at the top of the contents, in HTML and PDF. PNG, JPG and SVG.</li><li><b>Theme colors.</b> Text, accent, highlight and each heading level, with ready palettes and the color code.</li><li><b>Nine fonts.</b> Archivo, Atkinson Hyperlegible Next, Inter, Source Sans 3, Source Serif 4, Lora, Montserrat, Playfair Display and JetBrains Mono. They travel with the exported HTML, no network needed.</li><li><b>Cover and footer.</b> Subtitle, author, version and date on the cover; text and page numbers in the PDF footer.</li><li><b>Contrast warning.</b> The screen warns you when a color does not reach 4.5:1 against white.</li></ul></div>
+<figure><picture><source srcset="../../img/feat-marca-en-dark-m.webp" media="(max-width:599px) and (prefers-color-scheme:dark)" width="490" height="306"><source srcset="../../img/feat-marca-en-m.webp" media="(max-width:599px)" width="490" height="306"><source srcset="../../img/feat-marca-en-dark.webp" media="(prefers-color-scheme:dark)"><img src="../../img/feat-marca-en.webp" width="1000" height="720" loading="lazy" alt="Export manual dialog scrolled to the client logo and the manual colors: the Prado Accounting logo is uploaded and the Plum palette is selected."></picture><figcaption>Logo, colors, fonts, cover and footer live in Manual appearance, before you export.</figcaption></figure>
 </div>
 </section>
 
@@ -94,6 +94,7 @@
 <article id="exportacao"><h3>PDF, HTML or Markdown.</h3><p>One click makes the format. The PDF goes by email, the HTML opens in the browser and the Markdown comes out as a single file, with screenshot captions as text.</p></article>
 <article id="editor"><h3>Page editor.</h3><p>Alerts, a <code>/</code> menu with blocks, tables with row and column controls, text color and Ctrl+V to paste the screenshot.</p></article>
 <article id="local"><h3>Local, no account.</h3><p>Studio opens on localhost and saves to a folder of yours, as Markdown and images that fit in git. If another editor touches the page, Studio warns you instead of overwriting. MIT license.</p></article>
+<article id="publicos"><h3>One manual, many audiences.</h3><p>Mark who sees each page, such as student or admin, and export one manual per audience. Create, rename and remove audiences in Settings.</p></article>
 </div>
 </div>
 </section>
@@ -105,7 +106,7 @@
 <code tabindex="0">npx explicai manuals</code>
 <button class="btn" type="button" hidden data-copy="npx explicai manuals" data-done="Copied" data-fail="Copy it by hand">Copy command</button>
 </div>
-<p class="apoio">Needs Node 20.12 or newer.</p>
+<p class="apoio">Needs Node 22.12 or newer.</p>
 </div>
 </section>
 </main>
